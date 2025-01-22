@@ -7,7 +7,7 @@ const Category = () => {
     return (
         <div className='m-10'>
             <h1 className='font-bold text-2xl'>Group Buy Marketplace</h1>
-            <div className='w-full h-44 border-4 mt-4 rounded-lg'>
+            <div className='w-full h-44 border-2 mt-4 rounded-lg'>
                 <h2 className='font-bold text-xl mt-4 ml-6'>Search Products</h2>
                 <div className='flex items-center justify-between mt-5 ml-3'>
                     <div className="md:w-1/2 px-3 mb-4 md:mb-0">
@@ -119,7 +119,7 @@ const Category = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-36 border-4 rounded-lg mt-8'>
+            <div className='w-full h-36 border-2 rounded-lg mt-8'>
                 <h1 className='text-center font-bold text-2xl mt-7'>Current Active Groups</h1>
             </div>
         </div>

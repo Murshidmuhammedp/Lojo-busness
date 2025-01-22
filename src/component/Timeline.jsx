@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 const Timeline = () => {
     const [selectedDays, setSelectedDays] = useState(7);
 
-    // Sample data for different timelines
     const timelineData = {
         7: {
+            image: 'https://ushastrikerfans.com/wp-content/uploads/2023/05/one.png',
             name: 'Fans',
             category: 'Electricals',
             subcategory: 'Appliances',
@@ -15,6 +15,7 @@ const Timeline = () => {
             endDate: '2023-10-07'
         },
         14: {
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx2P75CekzzhWp_OhvPEp6AFGop1taonWa_g&s",
             name: 'LED Lights',
             category: 'Electricals',
             subcategory: 'Lighting',
@@ -24,6 +25,7 @@ const Timeline = () => {
             endDate: '2023-10-14'
         },
         28: {
+            image:"https://cdn.pixabay.com/photo/2021/09/08/07/20/air-conditioner-6605973_1280.jpg",
             name: 'Air Conditioner',
             category: 'Electricals',
             subcategory: 'Cooling',
@@ -47,7 +49,7 @@ const Timeline = () => {
     const currentProductData = timelineData[selectedDays];
 
     return (
-        <div className=' h-1/2 border-4 rounded-lg m-10'>
+        <div className=' h-1/2 border-2 rounded-lg m-10'>
 
             <div className=" p-6">
                 <h2 className="text-2xl font-bold mb-6">Featured Products by Timeline</h2>
@@ -58,7 +60,7 @@ const Timeline = () => {
                             key={option.value}
                             className={`flex-1 p-3 text-center border  cursor-pointer transition-colors
               ${selectedDays === option.value
-                                    ? 'bg-blue-50 border-blue-200'
+                                    ? 'bg-blue-50 border-blue-400'
                                     : 'bg-white hover:bg-gray-50'}`}
                             onClick={() => handleTimelineChange(option.value)}
                         >
@@ -67,9 +69,14 @@ const Timeline = () => {
                     ))}
                 </div>
 
-                <div className="border-4 rounded-lg p-6 bg-white w-1/2">
+                <div className="border-2 rounded-lg p-6 bg-blue-50 w-1/2">
                     <div className="flex gap-6">
-                        <div className="w-32 h-32 bg-gray-200 rounded-md mt-10"></div>
+                        <div
+                            className="w-32 h-32 bg-white rounded-md mt-10 bg-cover bg-center"
+                            style={{ backgroundImage: `url(${currentProductData.image})` }}
+                        ></div>
+
+
                         <div className="flex-1">
                             <h3 className="text-lg font-semibold mb-2">{currentProductData.name}</h3>
                             <div className="space-y-1 text-sm">
@@ -98,7 +105,7 @@ const Timeline = () => {
                                     <span>{currentProductData.endDate}</span>
                                 </div>
                             </div>
-                            <button className="mt-4 px-4 py-2 text-sm bg-white border-2 rounded-md hover:bg-gray-50">
+                            <button className="mt-4 px-4 py-2 text-sm bg-white border-2 rounded-md hover:bg-blue-600 hover:text-white">
                                 Join Group
                             </button>
                         </div>

@@ -6,7 +6,7 @@ const Dashboard = () => {
             <h1 className='font-bold text-2xl'>Dashboard</h1>
 
             <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
-                <div className="bg-white p-8 rounded-lg border-4">
+                <div className="bg-gray-200 p-8 rounded-lg border-2 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105">
                     <div className="mb-6">
                         <h3 className="text-lg font-semibold mb-2 flex justify-between items-center">
                             Total Savings Amount All Users
@@ -17,7 +17,7 @@ const Dashboard = () => {
                     <p className="text-gray-400 text-sm">+25% Increment last Month</p>
                 </div>
 
-                <div className="bg-white p-8 rounded-lg border-4">
+                <div className="bg-gray-200 p-8 rounded-lg border-2 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105">
                     <div className="mb-6">
                         <h3 className="text-lg font-semibold mb-2 flex justify-between items-center">
                             Group way Participated
@@ -41,7 +41,7 @@ const Dashboard = () => {
                     <p className="text-gray-400 text-sm">+31% Increment last Month</p>
                 </div>
 
-                <div className="bg-white p-8 rounded-lg border-4">
+                <div className="bg-gray-200 p-8 rounded-lg border-2 focus:outline-none transition duration-300 ease-in-out transform hover:scale-105">
                     <div className="mb-6">
                         <h3 className="text-lg font-semibold mb-2 flex justify-between items-center">
                             Orders Complited
@@ -67,7 +67,7 @@ const Dashboard = () => {
             </section>
 
             <section className=' grid grid-cols-1 md:grid-cols-2 gap-6 mt-6' >
-                <div className="bg-white p-8 rounded-lg border-4">
+                <div className="bg-white p-8 rounded-lg border-2">
                     <div className="mb-6">
                         <h3 className="text-2xl font-bold mb-2 flex justify-between items-center">
                             Active Group Buys & Savings Opportunities
@@ -80,7 +80,7 @@ const Dashboard = () => {
                         </span>
                         <div className="bg-gray-200 rounded-full h-4 mt-2">
                             <div
-                                className="bg-black h-4 rounded-full"
+                                className="bg-blue-700 h-4 rounded-full"
                                 style={{ width: "75%" }}
                                 role="progressbar"
                                 aria-valuenow="75"
@@ -97,7 +97,7 @@ const Dashboard = () => {
                         </span>
                         <div className="bg-gray-200 rounded-full h-4 mt-2">
                             <div
-                                className="bg-black h-4 rounded-full"
+                                className="bg-blue-700 h-4 rounded-full"
                                 style={{ width: "50%" }}
                                 role="progressbar"
                                 aria-valuenow="50"
@@ -114,7 +114,7 @@ const Dashboard = () => {
                         </span>
                         <div className="bg-gray-200 rounded-full h-4 mt-2">
                             <div
-                                className="bg-black h-4 rounded-full"
+                                className="bg-blue-700 h-4 rounded-full"
                                 style={{ width: "90%" }}
                                 role="progressbar"
                                 aria-valuenow="90"
@@ -126,7 +126,7 @@ const Dashboard = () => {
                     </div>
                 </div>
 
-                <div className="bg-white p-8 rounded-lg border-4">
+                <div className="bg-white p-8 rounded-lg border-2">
                     <div className="mb-6">
                         <h3 className="text-2xl font-bold mb-2 flex justify-between items-center">
                             Platform Metrics
