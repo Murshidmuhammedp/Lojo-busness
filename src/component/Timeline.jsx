@@ -69,7 +69,7 @@ const Timeline = () => {
                     ))}
                 </div>
 
-                <div className="border-2 rounded-lg p-6 bg-blue-50 w-1/2">
+                <div className="border-2 rounded-lg p-6 bg-white w-1/2">
                     <div className="flex gap-6">
                         <div
                             className="w-32 h-32 bg-white rounded-md mt-10 bg-cover bg-center"
