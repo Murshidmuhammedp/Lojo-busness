@@ -32,12 +32,16 @@ const Firstbox = () => {
     };
 
     return (
-        <div className="w-full h-auto flex justify-center items-center  bg-gray-100">
-            <div className="w-full px-2 m-8">
+
+        <div className="w-full h-auto flex justify-center items-center bg-gray-100">
+            <div className="w-full px-2 m-8 sm:m-6 md:m-8">
                 <Slider {...settings}>
                     {cards.map((card, index) => (
-                        <div key={index} className="w-full h-[500px] md:h-[400px] sm:h-[300px]">
-                            <div className="w-full h-full relative">
+                        <div
+                            key={index}
+                            className="w-full lg:h-[400px] min-h-[200px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[400px]"
+                        >
+                            <div className="w-full h-full">
                                 <img
                                     src={card.image}
                                     alt={`Banner ${index + 1}`}
@@ -49,6 +53,9 @@ const Firstbox = () => {
                 </Slider>
             </div>
         </div>
+
+
+
     );
 };
 
