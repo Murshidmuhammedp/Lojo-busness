@@ -20,7 +20,7 @@ const cards = [
 
 const Firstbox = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 1000,
         slidesToShow: 1,
@@ -32,11 +32,11 @@ const Firstbox = () => {
     };
 
     return (
-        <div className="relative w-full h-screen flex justify-center items-center  bg-gray-100">
-            <div className="w-full max-w-7xl px-4">
+        <div className="w-full h-auto flex justify-center items-center  bg-gray-100">
+            <div className="w-full px-2 m-8">
                 <Slider {...settings}>
                     {cards.map((card, index) => (
-                        <div key={index} className="w-full h-[500px]">
+                        <div key={index} className="w-full h-[500px] md:h-[400px] sm:h-[300px]">
                             <div className="w-full h-full relative">
                                 <img
                                     src={card.image}
